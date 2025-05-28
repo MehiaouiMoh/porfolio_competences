@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Portfolio BUT2 Informatique
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est un **portfolio miniature** développé avec **React** et **Tailwind CSS**, visant à présenter les **6 compétences** acquises durant le BUT2 Informatique à l'IUT des Vosges. Il met en valeur les différents **projets réalisés**, les **compétences techniques** développées, ainsi que mon **ressenti personnel** sur la formation.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Technologies utilisées
 
-### `npm start`
+- **React** – pour la structure et les composants interactifs.
+- **Tailwind CSS** – pour un design moderne et épuré.
+- **Vite** – pour un environnement de développement rapide.
+- **Vercel** – pour le déploiement.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📂 Structure du site
 
-### `npm test`
+Le site est organisé en **une seule page (single-page application)** avec des sections claires :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **À propos du BUT** : explication de la formation et des compétences attendues.
+- **Compétences** : présentation des 6 compétences avec une ou plusieurs réalisations concrètes.
+- **Projets** : description de projets menés avec les technologies utilisées.
+- **Skills** : aperçu des outils, langages, et frameworks maîtrisés.
+- **Mon ressenti** : retour personnel sur l’année de formation.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧠 Objectifs pédagogiques
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ce portfolio a pour but de :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Illustrer de manière visuelle et interactive les compétences acquises.
+- Permettre à un enseignant ou recruteur de consulter facilement les travaux réalisés.
+- S’entraîner au développement front-end moderne avec React.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Installation locale
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Si vous souhaitez tester le projet en local :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/MehiaouiMoh/porfolio_competences.git
+cd portfolio-but2
+npm install
+npm run dev
