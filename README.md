@@ -1,6 +1,6 @@
 # Portfolio BUT2 Informatique
 
-Ce projet est un **portfolio miniature** développé avec **React** et **Tailwind CSS**, visant à présenter les **6 compétences** acquises durant le BUT2 Informatique à l'IUT des Vosges. Il met en valeur les différents **projets réalisés**, les **compétences techniques** développées, ainsi que mon **ressenti personnel** sur la formation.
+Ce projet est un **portfolio miniature** développé avec **React** et **Tailwind CSS**, visant à présenter les **6 compétences** acquises durant le BUT2 Informatique à l'IUT de Saint Dié des Vosges. Il met en valeur les différents **projets réalisés**, les **compétences techniques** développées, ainsi que mon **ressenti personnel** sur la formation.
 
 ---
 
