@@ -4,13 +4,12 @@ import '../styles/navBar.css'
 
 function Navbar(){
     return(
-        <div className = "navbar flex justify-between items-center">
-            <div className="logo ml-10 text-xl font-bold">Portfolio</div>
-            <div className="links flex justify-between items-center gap-x-6 px-6 py-6 mr-10 text-base font-medium">
-                <a href="#" className="ancre">A propos du BUT</a>
-                <a href="#" className="ancre">Compétences</a>
-                <a href="#" className="ancre">Mes Skills</a>
-                <a href="#" className="ancre">Mon ressenti</a>
+        <div className = "navbar flex justify-around items-center text-white">
+            <div className="logo ml-10 text-2xl font-bold">Portfolio</div>
+            <div className="links flex justify-between items-center gap-x-6 px-6 py-6 mr-10 text-base">
+                <a href="#sliderCompetences" className="ancre">Compétences</a>
+                <a href="#skillSection" className="ancre">Mes Skills</a>
+                <a href="#feedbackSection" className="ancre">Mon ressenti</a>
             </div>
         </div>
     );

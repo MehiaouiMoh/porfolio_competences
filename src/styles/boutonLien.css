@@ -1,0 +1,16 @@
+.toBUT{
+    text-align: center;
+    width: fit-content;
+    padding: 20px 40px 20px 40px;
+    color: white;
+    border-radius: 35px;
+    border: none;
+    background: #38ffeb;
+    font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient(90deg,rgba(56, 255, 235, 1) 0%, rgba(23, 209, 255, 1) 50%);
+    transition: all 0.2s ease-in-out;
+  }
+  .toBUT:hover{
+    box-shadow: 0px 0px 37px rgb(0, 255, 247);
+  }
