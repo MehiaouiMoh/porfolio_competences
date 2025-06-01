@@ -103,6 +103,26 @@
       font-weight: bold;
     }
   }
+  .Projets{
+    width: 100%;
+    height: fit-content;
+    border: 1px solid;
+    padding: 20px;
+    .SliderSection{
+      background-image: url('./assets/images/bureau-avec-ecran-d-ordinateur-et-chaise-de-bureau.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 90%;
+      height: 690px;
+      border: 1px solid blue;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5%;
+    }
+  }
 
 }
 

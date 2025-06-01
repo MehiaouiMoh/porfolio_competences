@@ -20,7 +20,7 @@ export default function CompetenceAccordion({ index, competence, isOpen, onToggl
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
           {/* Bloc 1 : Ce que j’ai appris */}
           <div className="bg-gray-50 rounded-lg p-4 shadow-sm col-span-2">
-            <h3 className="font-bold text-lg mb-2">Ce que j’ai appris</h3>
+            <h3 className="font-bold text-lg mb-2">Ce que j'ai appris</h3>
             <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
               <li>Analyse des besoins clients + cahier des charges</li>
               <li>Conception fullstack avec rôles utilisateurs</li>
@@ -46,10 +46,31 @@ export default function CompetenceAccordion({ index, competence, isOpen, onToggl
           <div className="bg-gray-50 rounded-lg p-4 shadow-sm">
             <h3 className="font-bold text-lg mb-2">Pendant ces deux semestres</h3>
             <p className="text-sm text-gray-700">
-              Travail en équipe sur des projets concrets, respect des délais, montée en
-              compétences sur le cycle complet de développement logiciel.
+              Travail en équipe sur des projets concrets, respect des délais, et montée en
+              compétences sur le cycle complet de développement logiciel. J’ai appris à :
+              <br /><br />
+              • Créer un cahier des charges à partir des besoins clients, puis y répondre en développant une application complexe à partir de zéro.
+              <br />
+              • Utiliser des outils d’UX design pour concevoir une maquette de référence.
+              <br />
+              • Comprendre et appliquer les techniques de sécurité côté back-end en PHP.
+              <br />
+              • Travailler efficacement en binôme, proposer et intégrer des améliorations pertinentes.
+              <br />
+              • Interroger une base de données, récupérer ou modifier des données via des requêtes préparées.
+              <br />
+              • Inclure dynamiquement un fichier de connexion à la base de données en PHP.
+              <br />
+              • Mettre en place une base de données externe et indépendante avec Docker.
+              <br />
+              • Maîtriser GitLab et la gestion des branches.
+              <br />
+              • Analyser, critiquer et corriger du code.
+              <br />
+              • Côté Three.js : initiation au design 3D et intégration dans un site web.
             </p>
           </div>
+
 
           {/* Bloc 4 : Projets réalisés */}
           <div className="bg-gray-50 rounded-lg p-4 shadow-sm col-span-2">

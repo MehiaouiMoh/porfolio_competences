@@ -8,6 +8,7 @@ import MobileNavBar from './composants/MenuMobile';
 import ImageAnime from './composants/imageAnimeScroll';
 import CompetenceSlider from './composants/competenceSlider';
 import CompetenceAccordion from './composants/competenceAccordion';
+import ProjectSlider from './composants/ProjectSlider';
 
 function App() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -85,6 +86,14 @@ function App() {
               />
             </div>
           ))}
+        </section>
+        <section className="Projets">
+          <h1 className="accrocheProjet text-2xl text-center font-bold mt-10 mb-10">
+            Construire des compétences, c'est avant tout pratiquer : découvrez mes projets concrets réalisés durant mon BUT
+          </h1>
+          <div className="SliderSection">
+            <ProjectSlider />
+          </div>
         </section>
       </main>
       <MobileNavBar />
