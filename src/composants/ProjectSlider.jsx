@@ -2,6 +2,19 @@ import React from 'react';
 import { FaGlobe, FaCode, FaBug, FaCalculator, FaPencilRuler, FaCubes, FaProjectDiagram } from 'react-icons/fa';
 import '../styles/ProjetSlider.css'
 
+//Icones
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import { faJs } from '@fortawesome/free-brands-svg-icons';
+import { faCss3 } from '@fortawesome/free-brands-svg-icons';
+import { faPhp } from '@fortawesome/free-brands-svg-icons';
+
+//images
+import tennisProjet from '../assets/images/imageProjet/club_tennis.png'
+
+
+
 const navItems = [
   { icon: <FaGlobe />, label: 'Web' },
   { icon: <FaCode />, label: 'API' },
@@ -26,7 +39,7 @@ const projectCards = [
       'Générer un certificat SSL auto',
       'Passer sous https',
     ],
-    image: '/project-images/vosgestennis.png',
+    image: tennisProjet,
     languages: ['HTML', 'CSS', 'PHP', 'JS'],
   },
 ];
@@ -50,21 +63,31 @@ export default function ProjectSlider() {
                     {projectCards.map((project, index) => (
                         <div key={index} className="cardprojet w-full h-full">
                             <div className="sectioncard1">
-                                <h2 className="text-2xl font-bold ml-10 mt-10 w-[50%]">{project.title}</h2>
-                                <div className="imgprojet bg-white h-[150px] w-[300px] ml-10 mt-10 rounded-[20px]"></div>
-                                <h3 className= "text-xl font-medium ml-10 mt-10 w-[50%]">Nouveaux skills, nouveaux languages</h3>
+                                <h2 className="text-2xl font-bold ml-10 mt-10 w-[80%]">{project.title}</h2>
+                                <div className="imgprojet bg-white h-[200px] w-[400px] ml-10 mt-10 rounded-[20px]">
+                                    <img src={project.image} alt="TennisProject" className="w-full h-full object-cover rounded-lg bg-gray-200"/>
+                                </div>
+                                <h3 className= "text-xl font-medium ml-10 mt-5 mb-5 w-[70%]">Nouveaux skills, nouveaux languages</h3>
+                                <div className="skillscontainer">
+                                    <div className="skills">
+                                        <FontAwesomeIcon icon={faHtml5} style={{color: "#74C0FC", width: "100%", height: "100%"}} />
+                                    </div>
+                                    <div className="skills">
+                                        <FontAwesomeIcon icon={faCss3} style={{color: "#63E6BE", width: "100%", height: "100%"}} />
+                                    </div>
+                                    <div className="skills">
+                                        <FontAwesomeIcon icon={faPhp} style={{ width: "100%", height: "100%"}} />
+                                    </div>
+                                    <div className="skills">
+                                        <FontAwesomeIcon icon={faJs} style={{color: "#FFD43B", width: "100%", height: "100%"}} />
+                                    </div>
+                                </div>
                                 <div className='barSeparation w-[5px] h-[70%] bg-white rounded-[30px]'></div>
                             </div>
-                            <div className="sectioncard2">
-                                <h4 className='aboutprojet'>Un site résponsive</h4>
-                                <h4 className='aboutprojet'>Un site résponsive</h4>
-                                <h4 className='aboutprojet'>Un site résponsive</h4>
-                                <h4 className='aboutprojet'>Un site résponsive</h4>
-                                <h4 className='aboutprojet'>Un site résponsive</h4>
-                                <h4 className='aboutprojet'>Un site résponsive</h4>
-                                <h4 className='aboutprojet'>Un site résponsive</h4>
-                                <h4 className='aboutprojet'>Un site résponsive</h4>
-                                <h4 className='aboutprojet'>Un site résponsive</h4>
+                            <div className="sectioncard2 flex flex-col justify-around">
+                                {project.features.map((feature, i) => (
+                                    <h4 key= {i} className='aboutprojet'>{feature}</h4>
+                                ))}
                             </div>
                         </div>
                     ))}
