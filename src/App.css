@@ -121,7 +121,31 @@
       margin-left: 5%;
     }
   }
+  .AllProjets{
+    height: 900px;
+    .textBlend{
+      background-image: url('./assets/images/fondblend.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      h1{
+        mix-blend-mode: screen;
+        background-color: white;
+        color: black;
+        text-align: center;
+      }
+    }
+    .containerText {
+      .split {
+        opacity: 0;
+        will-change: transform;
+      }
 
+      .split * {
+        will-change: transform;
+      }
+    }
+  }
 }
 
 

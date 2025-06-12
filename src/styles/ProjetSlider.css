@@ -72,3 +72,60 @@
             }
     }
 }
+
+@media (max-width: 768px) {
+  .slidercontainer {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .slidercontainer .container {
+    width: 100%;
+    height: auto;
+  }
+
+  .slidercontainer .container .cardcontainer {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .slidercontainer .container .cardcontainer .cardprojet {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .slidercontainer .container .cardcontainer .cardprojet .sectioncard1,
+  .slidercontainer .container .cardcontainer .cardprojet .sectioncard2 {
+    width: 100%;
+  }
+
+  .slidercontainer .container .cardcontainer .cardprojet .sectioncard1 .skillscontainer {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .slidercontainer .container .cardcontainer .cardprojet .sectioncard1 .barSeparation {
+    display: none;
+  }
+
+  .slidercontainer .navbar {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .slidercontainer .navbar span {
+    display: none; /* Masque les labels sur mobile si nécessaire */
+  }
+
+  .slidercontainer .container .cardcontainer .cardprojet .sectioncard2 .aboutprojet {
+    font-size: 16px;
+  }
+}
