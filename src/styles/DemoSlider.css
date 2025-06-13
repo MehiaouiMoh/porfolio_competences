@@ -1,0 +1,132 @@
+.container{
+    position: relative;
+    .nav-bar{
+        border-radius: 50px;
+        width: 70%;
+        margin-left: 5%;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 37px rgb(128, 128, 128);
+        padding: 5px;
+
+        .btn-nav{
+            border: none;
+            width: 200px;
+        }
+    }
+    .robot{
+        position: absolute;
+        left: 75%;
+        top: -80px;
+        z-index: -1;
+    }
+    .infos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: fit-content;
+        padding: 20px;
+
+        .cardsInfo {
+            background-color: white;
+            padding: 2rem;
+            margin: 1.5rem auto;
+            border-radius: 1rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cardsInfo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .cardsInfo h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+
+        .cardsInfo p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #374151;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+
+    .nav-bar {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 80px;
+
+      .btn-nav {
+        width: auto;
+        font-size: 10px;
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    .robot {
+      position: absolute;
+        left: 75%;
+        top: 79px;
+        z-index: -1;
+
+        img{
+            width: 70px;
+        }
+    }
+
+    video {
+      width: 90% !important;
+      height: auto !important;
+    }
+
+    .infos {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+
+      .cardsInfo {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+
+      .cardsInfo h3 {
+        font-size: 1.25rem;
+      }
+
+      .cardsInfo p {
+        font-size: 0.95rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+  }
+}
+
+
+

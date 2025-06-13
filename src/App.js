@@ -7,13 +7,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {SplitText} from "gsap/SplitText";
 import Navbar from './composants/navbar';
 import Boutonlien from './composants/boutonLien';
-import TextAnime from './composants/textAnimeScroll';
 import MobileNavBar from './composants/MenuMobile';
 import ImageAnime from './composants/imageAnimeScroll';
 import CompetenceSlider from './composants/competenceSlider';
 import CompetenceAccordion from './composants/competenceAccordion';
-import ProjectSlider from './composants/ProjectSlider';
 import InfiniteSlider from './composants/InfiniteSlider';
+import DemoSlider from './composants/DemoSlider';
+
+//importer des icones
 
 //pluggins
 gsap.registerPlugin(TextPlugin);
@@ -25,6 +26,7 @@ function App() {
 
   //Creer une reference au texte + de créativité
   const refTextBlend = useRef(null);
+    
 
   useEffect(() => {
     const letters = refTextBlend.current.querySelectorAll("span");
@@ -121,7 +123,7 @@ function App() {
       </header>
       <main className="App-main">
         <section className="accroche-main">
-          <TextAnime />
+          <p>6 domaines de compétences variés,<br /> de l'informatique à la gestion de projet</p>
           <ImageAnime />
         </section>
         <section className='sliderCompetences' id='sliderCompetences'>
@@ -155,14 +157,6 @@ function App() {
             </div>
           ))}
         </section>
-        <section className="Projets">
-          <h1 className="accrocheProjet text-2xl text-center font-bold mt-10 mb-10">
-            Construire des compétences, c'est avant tout pratiquer : découvrez mes projets concrets réalisés durant mon BUT2
-          </h1>
-          <div className="SliderSection">
-            <ProjectSlider />
-          </div>
-        </section>
         <section className="AllProjets">
           <div className='textBlend'>
             <h1 
@@ -180,6 +174,8 @@ function App() {
             <p className='split text-2xl text-center'>Deux années de but, forcement, ça en fait des projets. Découvrez<br/>les sous forme d'un slider infini et regardez les démos !</p>
           </div>
           <InfiniteSlider />
+          <h1 className="text-5xl font-bold text-center mt-20 mb-4">Démonstrations vidéos</h1>
+          <DemoSlider />
         </section>
       </main>
       <MobileNavBar />

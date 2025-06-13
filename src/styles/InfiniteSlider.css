@@ -63,3 +63,28 @@
     transform: translateX(0%);
   }
 }
+
+/* === RESPONSIVE : MOBILE === */
+@media (max-width: 768px) {
+  .slider-item {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+  }
+
+  .slider img {
+    height: 200px;
+    width: 300px;
+  }
+
+  .text-slide span.text-5xl {
+    font-size: 1.5rem; /* réduit la taille du texte glissant */
+  }
+
+  .text-slide .w-6.h-6 {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-left: 0.75rem;
+  }
+}
+
+
