@@ -79,7 +79,7 @@ export default function VideoSlider() {
             ))}
         </div>
         <div className='robot'>
-            <img src={robotImage} alt="Robot" className="w-200 h-200 mx-auto" />
+            <img src={robotImage} alt="Robot" className="w-30 h-40 mx-auto" />
         </div>
         {/* Vidéo */}
         <div className="w-full flex justify-center mb-6">
