@@ -23,6 +23,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        gap: 30px;
         height: fit-content;
         padding: 20px;
 
@@ -38,7 +39,7 @@
             height: 400px;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             text-align: center;
         }
