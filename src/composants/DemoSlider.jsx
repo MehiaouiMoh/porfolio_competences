@@ -8,6 +8,7 @@ import canalplusEtudeVideo from '../assets/videos/canalplusetude.mp4';
 import threejsDemo from '../assets/videos/three.jsDemo.mp4';
 import optimisationDemo from '../assets/videos/optimisation.mp4';
 import apiDemo from '../assets/videos/API.mp4';
+import fullstackDemo from '../assets/videos/fullstackDemo.mp4';
 
 
 
@@ -24,7 +25,7 @@ export default function VideoSlider() {
     },
     {
       title: "Fullstack",
-      videoUrl: canalplusEtudeVideo,
+      videoUrl: fullstackDemo,
       year: "1e année",
       why: "Créer un site complet pour un club de tennis fictif, avec une interface publique et une partie administrable.",
       how: "Développement en binôme d’un site vitrine dynamique avec HTML, CSS, et JavaScript côté client, ainsi qu’un back-end en php permettant de gérer les actualités, événements, et réservations. Le design a été réalisé avec Figma, en respectant les bonnes pratiques d’UX/UI.",
