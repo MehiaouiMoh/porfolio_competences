@@ -13,6 +13,7 @@ import CompetenceSlider from './composants/competenceSlider';
 import CompetenceAccordion from './composants/competenceAccordion';
 import InfiniteSlider from './composants/InfiniteSlider';
 import DemoSlider from './composants/DemoSlider';
+import SliderStage from './composants/sliderStage';
 
 //importer des icones
 
@@ -176,6 +177,9 @@ function App() {
           <InfiniteSlider />
           <h1 className="text-5xl font-bold text-center mt-20 mb-4">Démonstrations vidéos</h1>
           <DemoSlider />
+        </section>
+        <section className="stage">
+          <SliderStage />
         </section>
       </main>
       <MobileNavBar />

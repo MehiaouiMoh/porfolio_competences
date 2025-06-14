@@ -1,0 +1,232 @@
+.slider-container {
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    background-color: #FFEEC8;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+    .slider-card{
+        width: 100%;
+        height: 100%;
+
+        .card1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 70px;
+            .textImg{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+
+                img{
+                    width: 500px;
+                    height: 500px;
+                }
+                .textContent{
+                    h2{
+                        font-size: 50px;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font-size: 30px;
+                        width: 400px;
+                    }
+                }
+            }
+        }
+        .card2,.card3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                font-size: 50px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                gap: 70px;
+
+                .arrows{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 50px;
+                }
+                .cardContent{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    .iconeText{
+                        width: 400px;
+                        height: 400px;
+                        margin-top: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        .icone{
+                            width: 80%;
+                            height: 300px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .title{
+                            font-size: 30px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .card3{
+            .content{
+                position: relative;
+
+                .iconeText{
+                    width: 400px;
+                    height: 400px;
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    .icone{
+                        width: 80%;
+                        height: 100px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .title{
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                }
+                .rocket{
+                    position: absolute;
+                    width: 300px;
+                    height: 300px;
+                    left: 85%;
+                    top: -150px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .slider-container {
+    width: 95%;
+    height: 95%;
+    padding: 20px;
+
+    .slider-card {
+      .card1, .card2, .card3 {
+        gap: 40px;
+
+        .textImg {
+          flex-direction: column;
+          img {
+            width: 300px;
+            height: auto;
+          }
+
+          .textContent {
+            h2 {
+              font-size: 36px;
+            }
+            p {
+              font-size: 22px;
+              width: 80%;
+              text-align: center;
+            }
+          }
+        }
+
+        .cardContent {
+          flex-direction: column;
+          gap: 40px;
+
+          .iconeText {
+            width: 300px;
+            height: auto;
+
+            .title {
+              font-size: 24px;
+            }
+          }
+        }
+
+        .rocket {
+          width: 200px;
+          height: 200px;
+          left: 70%;
+          top: -100px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+
+    .slider-card {
+      .card1, .card2, .card3 {
+        gap: 30px;
+
+        .textImg {
+          flex-direction: column;
+          img {
+            width: 250px;
+          }
+
+          .textContent {
+            h2 {
+              font-size: 28px;
+            }
+            p {
+              font-size: 18px;
+              width: 90%;
+            }
+          }
+        }
+
+        .cardContent {
+          .iconeText {
+            width: 250px;
+
+            .title {
+              font-size: 20px;
+            }
+          }
+        }
+        .rocket{
+            background-color: blue;
+        }
+      }
+    }
+  }
+}
+
