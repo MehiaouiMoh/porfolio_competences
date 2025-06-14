@@ -61,7 +61,7 @@ export default function VideoSlider() {
   const currentProject = projects[currentIndex];
 
   return(
-    <div className=" container p-4">
+    <div className="container">
         {/**Navigation */},
         <div className="nav-bar flex justify-around space-x-2">
             {projects.map((proj, index) => (
@@ -82,10 +82,10 @@ export default function VideoSlider() {
             <img src={robotImage} alt="Robot" className="w-30 h-40 mx-auto" />
         </div>
         {/* Vidéo */}
-        <div className="w-full flex justify-center mb-6">
+        <div className="demodiv border-black flex justify-center mb-6">
             <video
                 key={currentIndex}
-                className="w-[80%] h-[500px] rounded-xl shadow"
+                className="w-[90%] h-[500px] rounded-xl shadow"
                 controls
                 preload="metadata"
             >
