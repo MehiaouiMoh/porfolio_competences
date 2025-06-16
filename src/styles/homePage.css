@@ -8,7 +8,7 @@
 .App-header {
   width: 100%;
   height: 100%;
-  background-image: url('assets/images/header_fond.jpg');
+  background-image: url('../assets/images/header_fond.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,7 +114,7 @@
     height: fit-content;
     padding: 20px;
     .SliderSection{
-      background-image: url('./assets/images/bureau-avec-ecran-d-ordinateur-et-chaise-de-bureau.jpg');
+      background-image: url('../assets/images/bureau-avec-ecran-d-ordinateur-et-chaise-de-bureau.jpg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -132,7 +132,7 @@
     height: fit-content;
     padding: 20px;
     .textBlend{
-      background-image: url('./assets/images/fondblend.png');
+      background-image: url('../assets/images/fondblend.png');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
