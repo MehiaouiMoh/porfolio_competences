@@ -12,9 +12,21 @@ import CompetenceAccordion from '../composants/competenceAccordion';
 import InfiniteSlider from '../composants/InfiniteSlider';
 import DemoSlider from '../composants/DemoSlider';
 import SliderStage from '../composants/sliderStage';
+import EmojiSelector from '../composants/emojiSelector';
 
 //importer des style
 import '../styles/homePage.css';
+
+//import d'images
+import html from '../assets/images/imageSliderSkills/html-5.png';
+import css from '../assets/images/imageSliderSkills/css3.png';
+import figma from '../assets/images/imageSliderSkills/figma.png';
+import php from '../assets/images/imageSliderSkills/php.png';
+import sql from '../assets/images/imageSliderSkills/sql.png';
+import js from '../assets/images/imageSliderSkills/js.png';
+import react from '../assets/images/imageSliderSkills/react.png';
+import docker from '../assets/images/imageSliderSkills/docker.png';
+import Footer from "../composants/footer";
 
 //pluggins
 gsap.registerPlugin(TextPlugin);
@@ -180,6 +192,63 @@ function HomePage() {
         <section className="stage">
           <SliderStage />
         </section>
+        <section className="skillSection" id="skillSection">
+          <div className='containerText  mt-10 mb-10'>
+            <h3 className='split text-4xl font-bold text-center'>Ce que je maitrise aujourd'hui</h3>
+          </div>
+          <div className='containerText'>
+            <p className='split text-2xl text-center'>Un profil hybride : développement web &<br/> design UX/UI</p>
+          </div>
+          <div className="skills-container flex justify-center items-center gap-10  mt-20">
+            <div className="textCard">
+              <div className="card"><img src={html} alt= "html"/></div>
+              <p>Html</p>
+            </div>
+            <div className="textCard">
+              <div className="card"><img src={css} alt= "css"/></div>
+              <p>Css</p>
+            </div>
+            <div className="textCard">
+              <div className="card"><img src={figma} alt= "figma"/></div>
+              <p>Figma</p>
+            </div>
+            <div className="textCard">
+              <div className="card"><img src={php} alt= "php"/></div>
+              <p>php</p>
+            </div>
+            <div className="textCard">
+              <div className="card"><img src={sql} alt= "sql"/></div>
+              <p>Sql</p>
+            </div>
+            <div className="textCard">
+              <div className="card"><img src={js} alt= "js"/></div>
+              <p>Js</p>
+            </div>
+            <div className="textCard">
+              <div className="card"><img src={react} alt= "react"/></div>
+              <p>React</p>
+            </div>
+            <div className="textCard">
+              <div className="card"><img src={docker} alt= "docker"/></div>
+              <p>Docker</p>
+            </div>
+          </div>
+        </section>
+        <section className="feedbackSection mb-0" id="feedbackSection">
+          <div className='containerText  mt-10 mb-10'>
+            <h3 className='split text-4xl font-bold text-center'>Mon ressenti sur ces deux ans</h3>
+          </div>
+          <div className="container">
+            <div className="emojiText">
+              <p>Comment je l'ai ressenti</p>
+              <EmojiSelector />
+            </div>
+            <div className="textArea">
+              <p className="ml-2 mt-5 mr-2">Ce que j'en ai pensé...</p>
+            </div>
+          </div>
+        </section>
+        <Footer />
       </main>
       <MobileNavBar />
     </div>

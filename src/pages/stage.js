@@ -4,6 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 import Navbar from "../composants/navbar";
+import MobileNavBar from "../composants/MenuMobile";
+import Footer from '../composants/footer';
 
 //style
 import "../styles/stage.css";
@@ -41,9 +43,9 @@ export default function StagePage() {
 
   },[]);
   return (
-    <div className="stage-page" id="startPage">
+    <div className="stage-page flex flex-col min-h-screen" id="startPage">
       <Navbar darkLink={true}/>
-      <section className="stage-header">
+      <section className="stage-header flex-grow">
         <div className="container">
           <div className="text">
             <h1>Une première expérience professionnelle</h1>
@@ -95,7 +97,8 @@ export default function StagePage() {
           <p>Un stage très enrichissant. Il m'a permis de découvrir le fonctionnement de l'entreprise, d'apprendre de nouvelles choses et de développer mes compétences. J'ai pu participer à plusieurs tâches, observer le travail des professionnels, et mieux comprendre le métier. Cette expérience m'a beaucoup apporté.</p>
         </div>
       </section>
-
+      <Footer />
+      <MobileNavBar />
     </div>
   );
 }
