@@ -8,7 +8,7 @@ import MobileNavBar from "../composants/MenuMobile";
 import Footer from '../composants/footer';
 
 //style
-import "../styles/stage.css";
+import "../styles/scss/stage.scss";
 
 //Images
 import headerFond from "../assets/images/imagePageStage/stageHeader.png";
@@ -37,7 +37,6 @@ export default function StagePage() {
         start: 'top 80%', 
         toggleActions:'play none none none',
         onEnter: () =>{document.querySelector('.containerCard')?.classList.add('active')},
-        onLeave: () =>{document.querySelector('.containerCard')?.classList.remove('active')},
       },
     });
 
