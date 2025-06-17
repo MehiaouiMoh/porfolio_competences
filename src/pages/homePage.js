@@ -244,7 +244,12 @@ function HomePage() {
               <EmojiSelector />
             </div>
             <div className="textArea">
-              <p className="ml-2 mt-5 mr-2">Ce que j'en ai pensé...</p>
+              <p className="ml-2 mt-5 mr-2">Durant ces deux années de BUT, j'ai trouvé la formation à la fois accessible et enrichissante, particulièrement grâce aux projets pratiques et à l'apprentissage de la gestion de projet.  
+              J'ai acquis de solides compétences en développement web et logiciel, notamment en HTML, CSS, JavaScript pour le front-end, ainsi qu'en PHP et SQL pour le back-end. J'ai également appris à concevoir et déployer des API, gérer les bases de données, et travailler avec Docker pour containeriser mes applications.  
+              Ces expériences m'ont permis de mieux comprendre les différentes étapes du cycle de développement, de la conception fonctionnelle jusqu'à la mise en production sécurisée, y compris la génération de certificats SSL auto-signés pour sécuriser les sites.  
+              J'ai aussi pratiqué le travail en équipe grâce à Git, en utilisant des branches, et la communication via des outils collaboratifs comme Discord.  
+              Toutefois, certains cours manquaient parfois de pédagogie, ce qui rendait parfois difficile la maîtrise complète de certains langages ou concepts abordés rapidement.  
+              Cette formation a confirmé mon souhait de poursuivre mes études en Master, afin de me spécialiser et devenir développeur web fullstack.</p>
             </div>
           </div>
         </section>
