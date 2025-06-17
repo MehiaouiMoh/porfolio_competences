@@ -82,7 +82,7 @@ export default function StagePage() {
           <div className="pourcentage2">
             <div className="content">
               <h1>30 %</h1>
-              <p>Implémentation de données avec<br /> python</p>
+              <p>Implémentation de données avec<br />python</p>
             </div> 
           </div>
           <div className="pourcentage3">
