@@ -15,7 +15,7 @@ import SliderStage from '../composants/sliderStage';
 import EmojiSelector from '../composants/emojiSelector';
 
 //importer des style
-import '../styles/homePage.css';
+import '../styles/scss/homePage.scss';
 
 //import d'images
 import html from '../assets/images/imageSliderSkills/html-5.png';
@@ -199,7 +199,7 @@ function HomePage() {
           <div className='containerText'>
             <p className='split text-2xl text-center'>Un profil hybride : développement web &<br/> design UX/UI</p>
           </div>
-          <div className="skills-container flex justify-center items-center gap-10  mt-20">
+          <div className="skills-container flex flex-wrap justify-center items-center gap-10  mt-20">
             <div className="textCard">
               <div className="card"><img src={html} alt= "html"/></div>
               <p>Html</p>
